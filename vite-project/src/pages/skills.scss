@@ -1,0 +1,41 @@
+// Skills.scss
+
+$icon-size: 5rem; // Tamanho dos ícones em rem
+$title-font-size: 2rem; // Tamanho da fonte do título
+$item-font-size: 2.5rem; // Tamanho da fonte dos itens da lista
+$item-margin: 20px; // Margem entre os itens da lista
+
+.skills-container {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.skills-title {
+  font-size: $title-font-size;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  li {
+    margin: 0 $item-margin;
+    color: #333;
+    transition: transform 0.3s ease-in-out;
+
+    svg {
+      font-size: $icon-size; // Aplique o tamanho diretamente ao ícone (svg)
+      width: 100%; // Tornar o ícone 100% da largura do contêiner
+      height: auto; // Manter a proporção original
+    }
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
