@@ -1,16 +1,13 @@
-import Menu from './components/common/Menu';
-import './App.scss'
-import About from './pages/About';
-import Skills from './pages/Skills';
-import Projects from './pages/Projects';
+import { BrowserRouter as Router } from 'react-router-dom'; // Importe BrowserRouter
+import './App.scss';
+import AppRouter from './Router';
 
 function App() {
   return (
-    <div>
-      <Menu />
-      <About/>
-      <Skills/>
-      <Projects/>
+    <div className="app">
+      <Router> {/* Envolve o AppRouter com o BrowserRouter */}
+        <AppRouter />
+      </Router>
     </div>
   );
 }

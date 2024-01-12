@@ -1,41 +1,72 @@
-// Skills.scss
-
-$icon-size: 5rem; // Tamanho dos ícones em rem
-$title-font-size: 2rem; // Tamanho da fonte do título
-$item-font-size: 2.5rem; // Tamanho da fonte dos itens da lista
-$item-margin: 20px; // Margem entre os itens da lista
+/* skills.scss */
 
 .skills-container {
-  padding: 50px 0;
-  text-align: center;
+  /* Estilo para o container geral */
+  margin: 20px;
 }
 
 .skills-title {
-  font-size: $title-font-size;
-  color: #ffffff;
+  /* Estilo para o título */
+  text-align: center;
+  font-size: 24px;
   margin-bottom: 20px;
 }
 
-.skills-list {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.text-center {
+  /* Alinha o texto no centro */
+  text-align: center;
+}
 
-  li {
-    margin: 0 $item-margin;
-    color: #333;
-    transition: transform 0.3s ease-in-out;
+.mb-4 {
+  /* Adiciona margem inferior */
+  margin-bottom: 1.5rem;
+}
 
-    svg {
-      font-size: $icon-size; // Aplique o tamanho diretamente ao ícone (svg)
-      width: 100%; // Tornar o ícone 100% da largura do contêiner
-      height: auto; // Manter a proporção original
+.icon-container {
+  /* Estilo para o container do ícone */
+  margin-bottom: 10px;
+}
+
+.skill-info {
+  /* Estilo para as informações da habilidade */
+  p {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .progress-bar {
+    /* Estilo para a barra de progresso */
+    font-size: 16px;
+    margin-top: 10px;
+
+    .progress-icon {
+      /* Estilo para o ícone de progresso */
+      font-size: 24px;
+      margin-right: 8px;
     }
 
-    &:hover {
-      transform: scale(1.2);
+    .bar-container {
+      /* Estilo para o container da barra de progresso */
+      height: 10px;
+      background-color: #ddd;
+      border-radius: 5px;
+      margin-top: 5px;
+
+      .bar {
+        /* Estilo para a barra de progresso preenchida */
+        height: 100%;
+        background-color: #35278C;
+        border-radius: 5px;
+      }
+    }
+
+    span {
+      /* Estilo para a porcentagem */
+      margin-left: 5px;
+      font-size: 20px;
+      font-weight: 800;
+      justify-content: end;
     }
   }
 }
