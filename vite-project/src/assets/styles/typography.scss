@@ -1,0 +1,25 @@
+$font-size-small: 16px;
+$font-size-medium: 22px;
+$font-size-large: 24px;
+
+body {
+  font-size: $font-size-large; // Tamanho de texto padrão para o corpo do documento
+}
+
+.small-text {
+  font-size: $font-size-small; // Classe para texto pequeno
+}
+
+.medium-text {
+  font-size: $font-size-medium; // Classe para texto médio
+}
+
+.large-text {
+  font-size: $font-size-large; // Classe para texto grande
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: $font-size-small; // Ajuste para telas menores
+  }
+}

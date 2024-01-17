@@ -1,6 +1,22 @@
 
-
 .home-container{
-  background: linear-gradient(75deg, rgba(135, 0, 255, 1), rgba(141, 29, 253, 1), rgba(191, 143, 255, 0.73));
+  background: #040F0F
 
 }
+
+.btn-lg,
+.btn-xl {
+  width: 12rem; /* Defina a largura desejada para os botões */
+  height: 3rem; /* Defina a altura desejada para os botões */
+  font-size: 1.3rem;
+}
+
+@media (max-width: 767px) {
+  .btn-lg,
+  .btn-xl {
+    width: 10rem; /* Ajuste a largura desejada para telas menores */
+    height: 2.5rem; /* Ajuste a altura desejada para telas menores */
+    font-size: 1rem; /* Ajuste o tamanho da fonte desejado para telas menores */
+  }
+}
+

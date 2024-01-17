@@ -1,72 +1,33 @@
-/* skills.scss */
+.skill-container {
 
-.skills-container {
-  /* Estilo para o container geral */
-  margin: 20px;
+    background: #28112B
 }
 
-.skills-title {
-  /* Estilo para o título */
-  text-align: center;
-  font-size: 24px;
-  margin-bottom: 20px;
+.skills-item-container{
+  padding: 40px;
 }
 
-.text-center {
-  /* Alinha o texto no centro */
-  text-align: center;
+.text-md{
+  color: #DADDD8;
 }
 
-.mb-4 {
-  /* Adiciona margem inferior */
-  margin-bottom: 1.5rem;
+.text-percentage {
+  color: #DADDD8;
 }
 
-.icon-container {
-  /* Estilo para o container do ícone */
-  margin-bottom: 10px;
+.icon {
+  font-size: 6rem;
+  padding: 30x;
+  color: #DADDD8;
 }
 
-.skill-info {
-  /* Estilo para as informações da habilidade */
-  p {
-    font-weight: bold;
-    font-size: 18px;
-    margin-bottom: 5px;
+@media (max-width: 768px) {
+  .icon {
+    font-size: 1.2rem;
+    padding: 0;
   }
-
-  .progress-bar {
-    /* Estilo para a barra de progresso */
-    font-size: 16px;
-    margin-top: 10px;
-
-    .progress-icon {
-      /* Estilo para o ícone de progresso */
-      font-size: 24px;
-      margin-right: 8px;
-    }
-
-    .bar-container {
-      /* Estilo para o container da barra de progresso */
-      height: 10px;
-      background-color: #ddd;
-      border-radius: 5px;
-      margin-top: 5px;
-
-      .bar {
-        /* Estilo para a barra de progresso preenchida */
-        height: 100%;
-        background-color: #35278C;
-        border-radius: 5px;
-      }
-    }
-
-    span {
-      /* Estilo para a porcentagem */
-      margin-left: 5px;
-      font-size: 20px;
-      font-weight: 800;
-      justify-content: end;
-    }
+  .skills-item-container{
+    padding: 0px;
   }
 }
+

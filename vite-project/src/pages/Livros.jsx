@@ -1,10 +1,11 @@
 // Livros.jsx
+import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
-import Livro1Image from '../assets/images/pulseiradeodisea.png'; 
-import Livro2Image from '../assets/images/scary-movies.png';
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion';
+import Livro1Image from '../assets/images/pulseiradeodisea.png';
+import './livros.scss'; // Importe o arquivo de estilo
 
 // Exemplo de dados de livros
 const livrosData = [
@@ -17,37 +18,49 @@ const livrosData = [
   },
   {
     id: 2,
-    title: 'Livro 2',
-    author: 'Autor 2',
-    image: Livro2Image,
+    title: 'O adeus dos Deuses',
+    author: 'Marcos Rangel',
+    image: Livro1Image,
+    site: 'http://www.uol.com.br'
   },
   // Adicione mais livros conforme necessário
 ];
 
 function Livros() {
   return (
-    <Container>
-      <h1 className='text-white text-center mt-5 mb-4'>Livros</h1>
-      <Row xs={1} md={2} className="g-4">
-        {livrosData.map((livro) => (
-          <motion.Col
-          key={livro.id}
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5}}
-          >
-            <Card bg='color1' className='text-white'>
-              <Card.Img variant="top" src={livro.image} />
-              <Card.Body>
-                <Card.Title className='fs-1'>{livro.title}</Card.Title>
-                <Card.Text className='fs-5'>{livro.author}</Card.Text>
-                <Card.Link className='fs-5'>{livro.site}</Card.Link>
-              </Card.Body>
-            </Card>
-          </motion.Col>
-        ))}
-      </Row>
-    </Container>
+    <div className='livros-home'>
+      <Container>
+        <h1 className='p-5 text-white text-center'>Livros</h1>
+        <Row md={8} className="g-4 d-flex flex-wrap">
+          {livrosData.map((livro) => (
+            <Col md={6} xs={12} key={livro.id}>
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5 }}
+              >
+                <Col >
+                  <Card bg='transparent' className='text-white livro-card'
+                    border='light'
+                  >
+                    <Card.Img
+                      variant="top"
+                      src={livro.image}
+                    />
+                    <Card.Body style={{ width: 'auto', height: 'auto', objectFit: 'contain' }}>
+                      <Card.Title style={{ fontSize: '4.5vw' }}>{livro.title}</Card.Title>
+                      <Card.Text style={{ fontSize: '2.5vw' }}>{livro.author}</Card.Text>
+                      <Card.Link style={{ fontSize: '1.5vw' }}>{livro.site}</Card.Link>
+                    </Card.Body>
+
+                  </Card>
+                </Col>
+              </motion.div>
+            </Col>
+          ))}
+        </Row>
+      </Container>
+    </div>
   );
 }
 

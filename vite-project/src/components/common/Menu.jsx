@@ -16,7 +16,7 @@ function Menu() {
       variants={navVariants}
       style={{ width: '30%', minWidth: '200px' }}
     >
-      <Navbar expand="lg" bg="color1" variant="dark" className="fixed-top p-2 flex-column">
+      <Navbar expand="md" bg="color1" variant="dark" className="fixed-top p-2 flex-column">
         <Navbar.Brand className="fs-4 mr-auto">
           {"G{ele}co"}
         </Navbar.Brand>
