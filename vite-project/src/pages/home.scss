@@ -1,6 +1,6 @@
 
 .home-container{
-  background: #040F0F
+  background: #7673D9
 
 }
 
@@ -10,6 +10,43 @@
   height: 3rem; /* Defina a altura desejada para os botões */
   font-size: 1.3rem;
 }
+
+// OffcanvasStyles.scss
+.offcanvas-header {
+  background-color: #f26666;
+  color: #BDBEBF;
+}
+
+
+
+.offcanvas-body {
+  padding: 20px;
+  background-color: #7673D9
+}
+
+p {
+  color: #BDBEBF;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #BDBEBF;
+  li {
+    margin-bottom: 10px;
+
+    a {
+      color: #BDBEBF;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
 
 @media (max-width: 767px) {
   .btn-lg,

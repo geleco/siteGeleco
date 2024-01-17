@@ -22,4 +22,15 @@ body {
   body {
     font-size: $font-size-small; // Ajuste para telas menores
   }
+  .small-text {
+    font-size: $font-size-small; // Classe para texto pequeno
+  }
+  
+  .medium-text {
+    font-size: $font-size-small; // Classe para texto médio
+  }
+  
+  .large-text {
+    font-size: $font-size-small; // Classe para texto grande
+  }
 }

@@ -1,5 +1,39 @@
 .livros-home{
-    background: #6C6F7F
+    background: #F2B05E
   }
+.title-card{
+  color: #4E5063
+}
+
+.text-card{
+  color: #4E5063;
+}
+
+$min-font-size: 14;
+
+.Card.Body {
+  width: auto;
+  height: auto;
+  object-fit: contain;
+
+  // Tamanho da fonte responsiva
+  font-size: 2.5vw;
+  min-width: #{$min-font-size}px; 
+}
+
+.Card.Title {
+  font-size: 2.5vw;
+  min-width: #{$min-font-size}px;
+}
+
+.Card.Text {
+  font-size: 2.0vw;
+  min-width: #{$min-font-size}px;
+}
+
+.Card.Link {
+  font-size: 1.5vw;
+  min-width: #{$min-font-size}px;
+}
 
   

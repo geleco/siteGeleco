@@ -12,12 +12,12 @@ import {
 } from 'react-icons/bs';
 
 const skillsList = [
-  { icon: <BsLaptop />, id: 1, skillName: 'Front-End', percentage: 94 },
-  { icon: <BsServer />, id: 2, skillName: 'Back-End', percentage: 95 },
-  { icon: <BsGlobe />, id: 3, skillName: 'Web', percentage: 93 },
-  { icon: <BsTablet />, id: 4, skillName: 'Mobile', percentage: 99 },
-  { icon: <BsCodeSlash />, id: 5, skillName: 'Desktop', percentage: 88 },
-  { icon: <BsBrush />, id: 7, skillName: 'UI/UX', percentage: 90 },
+  { icon: <BsLaptop />, id: 1, skillName: 'Front-End', percentage: 78 },
+  { icon: <BsServer />, id: 2, skillName: 'Back-End', percentage: 45 },
+  { icon: <BsGlobe />, id: 3, skillName: 'Web', percentage: 89 },
+  { icon: <BsTablet />, id: 4, skillName: 'Mobile', percentage: 65 },
+  { icon: <BsCodeSlash />, id: 5, skillName: 'Desktop', percentage: 55 },
+  { icon: <BsBrush />, id: 7, skillName: 'UI/UX', percentage: 93 },
 ];
 
 function Skills() {
@@ -37,7 +37,7 @@ function Skills() {
                 <div className="skill-info">
                   <p className="text-md">{skillName}</p>
                   <div className="progress-bar">
-                    <ProgressBar variant='success' className='progress' now={percentage} />
+                    <ProgressBar variant='color4' className='progress' now={percentage} />
                     <div className="bar-container">
                       <div className="bar" style={{ width: `${percentage}%` }}></div>
                     </div>
