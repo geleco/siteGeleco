@@ -9,6 +9,8 @@
   width: 12rem; /* Defina a largura desejada para os botões */
   height: 3rem; /* Defina a altura desejada para os botões */
   font-size: 1.3rem;
+  margin-top:20px;
+  margin-bottom: 10px;
 }
 
 // OffcanvasStyles.scss
@@ -47,5 +49,15 @@ ul {
 }
 
 
-
+@media (max-width: 767px) {
+  .btn-lg,
+  .btn-xl {
+    margin-top:20px;
+    margin-bottom: 10px;
+    padding: 0;
+    width: 8rem; /* Ajuste a largura desejada para telas menores */
+    height: 2.5rem; /* Ajuste a altura desejada para telas menores */
+    font-size: 1rem; /* Ajuste o tamanho da fonte desejado para telas menores */
+  }
+}
 

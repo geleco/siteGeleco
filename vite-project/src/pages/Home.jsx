@@ -43,7 +43,7 @@ function Home() {
           </Container>
         </motion.div>
         <motion.div xs="12" className="text-center" {...commonAnimationProps} transition={{ delay: 0.2 }}>
-          <div className="mt-5">
+          <div >
             <ScrollLink to="skills" smooth={true} duration={500}>
               <Button variant="outline-light" size="lg" className="btn-lg text-large">
                 Habilidades
@@ -52,7 +52,7 @@ function Home() {
           </div>
         </motion.div>
         <motion.div xs="12" className="text-center" {...commonAnimationProps} transition={{ delay: 0.4 }}>
-          <div className="mt-4">
+          <div >
             <ScrollLink to="projects" smooth={true} duration={500}>
               <Button variant="outline-light" size="lg" className="btn-lg text-large">
                 Projetos
@@ -61,7 +61,7 @@ function Home() {
           </div>
         </motion.div>
         <motion.div xs="12" className="text-center" {...commonAnimationProps} transition={{ delay: 0.6 }}>
-          <div className="mt-4">
+          <div >
             <ScrollLink to="livros" smooth={true} duration={500}>
               <Button variant="outline-light" size="lg" className="btn-lg text-large">
                 Livros
@@ -70,7 +70,7 @@ function Home() {
           </div>
         </motion.div>
         <motion.div xs="12" className="text-center" {...commonAnimationProps} transition={{ delay: 0.8 }}>
-          <div className="mt-4">
+          <div >
             <Button variant="outline-light" size="lg" className="btn-xl text-large" onClick={handleOffcanvasShow}>
               Contato
             </Button>
