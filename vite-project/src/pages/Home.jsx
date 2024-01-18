@@ -28,7 +28,7 @@ function Home() {
               src={minhaImagem}
               alt="o Geleco"
               fluid
-              className="about-image rounded-circle shadow mb-4"
+              className="about-image rounded-circle shadow mb-4 mt-5"
               style={{ maxWidth: '35%', height: 'auto' }}
             />
             <div>
@@ -78,7 +78,7 @@ function Home() {
         </motion.div>
 
         {/* Offcanvas para o botão Contato */}
-        <Offcanvas classname='m-0 p-0' show={showOffcanvas} onHide={handleOffcanvasClose} placement="bottom">
+        <Offcanvas show={showOffcanvas} onHide={handleOffcanvasClose} placement="bottom">
   <Offcanvas.Header className='contato-header' closeButton>
     <Offcanvas.Title>Contato</Offcanvas.Title>
   </Offcanvas.Header>
@@ -86,19 +86,19 @@ function Home() {
     <p>Entre em contato comigo através dos seguintes meios:</p>
     <ul>
       <li>
-        <FaGithub /> GitHub:{' '}
+        <FaGithub /> {' '}
         <a href="https://github.com/geleco" target="_blank" rel="noopener noreferrer">
           meu GitHub
         </a>
       </li>
       <li>
-        <FaLinkedin /> LinkedIn:{' '}
+        <FaLinkedin /> {' '}
         <a href="https://www.linkedin.com/in/geleco/" target="_blank" rel="noopener noreferrer">
           meu LinkedIn
         </a>
       </li>
       <li>
-        <FaEnvelope /> E-mail:{' '}
+        <FaEnvelope /> {' '}
         <a href="mailto:rangel001@gmail.com">meu E-mail</a>
       </li>
     </ul>

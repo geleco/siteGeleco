@@ -5,7 +5,9 @@ import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import { motion } from 'framer-motion';
 import Livro1Image from '../assets/images/pulseiradeodisea.png';
+import DeusesBainos from '../assets/images/deuses_baianos.jpg'
 import './livros.scss'; // Importe o arquivo de estilo
+import Pagina404 from './erro';
 
 // Exemplo de dados de livros
 const livrosData = [
@@ -14,14 +16,14 @@ const livrosData = [
     title: 'A pulseira de Odísea',
     author: 'Marcos Rangel',
     image: Livro1Image,
-    site: 'http://www.uol.com.br'
+    site: Pagina404
   },
   {
     id: 2,
-    title: 'O adeus dos Deuses',
+    title: 'Deuses Baianos - em breve',
     author: 'Marcos Rangel',
-    image: Livro1Image,
-    site: 'http://www.uol.com.br'
+    image: DeusesBainos,
+    site: Pagina404
   },
   // Adicione mais livros conforme necessário
 ];
@@ -41,13 +43,18 @@ function Livros() {
               >
                 <Col>
                   <Card bg='transparent' className='mb-5 text-white livro-card' border='light'>
-                    <Card.Img variant="top" src={livro.image} />
+                  <Card.Img
+        variant="top"
+        src={livro.image}
+        className="img-fluid"
+        alt={`Capa do livro ${livro.title}`}
+      />
                     <Card.Body>
                       <Card.Title className='title-card'>{livro.title}</Card.Title>
                       <Card.Text className='text-card'>{livro.author}</Card.Text>
                       <div>
                         <Card.Link href={livro.site} target="_blank" rel="noopener noreferrer">
-                          Compre aqui
+                          Em breve, disponível para compra
                         </Card.Link>
                       </div>
                     </Card.Body>
