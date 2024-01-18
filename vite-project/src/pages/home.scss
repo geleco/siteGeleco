@@ -34,7 +34,6 @@ ul {
   margin: 0;
   color: #BDBEBF;
   li {
-    margin-bottom: 10px;
 
     a {
       color: #BDBEBF;
@@ -48,12 +47,5 @@ ul {
 }
 
 
-@media (max-width: 767px) {
-  .btn-lg,
-  .btn-xl {
-    width: 10rem; /* Ajuste a largura desejada para telas menores */
-    height: 2.5rem; /* Ajuste a altura desejada para telas menores */
-    font-size: 1rem; /* Ajuste o tamanho da fonte desejado para telas menores */
-  }
-}
+
 
