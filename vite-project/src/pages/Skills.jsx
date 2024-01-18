@@ -22,8 +22,8 @@ const skillsList = [
 
 function Skills() {
   return (
-    <Container fluid className="skill-container vh-100 d-block flex-column justify-content-center align-items-center">
-      <p className=" text-center skills-title text-white">Minhas Habilidades</p>
+    <Container fluid className="skill-container m-0  d-flex flex-column justify-content-center align-items-center">
+      <h1 className="  skills-title fs-1 text-white">Minhas Habilidades</h1>
       <Row className="m-0">
         {skillsList.map(({ icon, id, skillName, percentage }) => (
           <Col key={id} xs={12} md={6} lg={14} className="mb-4">

@@ -20,7 +20,7 @@ function Home() {
   const handleOffcanvasClose = () => setShowOffcanvas(false);
 
   return (
-    <Container fluid className="home-container d-flex align-items-center justify-content-center vh-100">
+    <Container fluid className="home-container d-flex align-items-center justify-content-center ">
       <Row className="align-items-center">
         <motion.div xs="12" className="text-center" {...commonAnimationProps}>
           <Container>
@@ -71,7 +71,7 @@ function Home() {
         </motion.div>
         <motion.div xs="12" className="text-center" {...commonAnimationProps} transition={{ delay: 0.8 }}>
           <div >
-            <Button variant="outline-light" size="lg" className="btn-xl text-large" onClick={handleOffcanvasShow}>
+            <Button variant="outline-light" size="lg" className="button-contato btn-xl text-large" onClick={handleOffcanvasShow}>
               Contato
             </Button>
           </div>
