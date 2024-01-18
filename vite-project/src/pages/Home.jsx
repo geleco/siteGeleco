@@ -78,7 +78,7 @@ function Home() {
         </motion.div>
 
         {/* Offcanvas para o botão Contato */}
-        <Offcanvas show={showOffcanvas} onHide={handleOffcanvasClose} placement="bottom">
+        <Offcanvas classname='m-0 p-0' show={showOffcanvas} onHide={handleOffcanvasClose} placement="bottom">
   <Offcanvas.Header className='contato-header' closeButton>
     <Offcanvas.Title>Contato</Offcanvas.Title>
   </Offcanvas.Header>
