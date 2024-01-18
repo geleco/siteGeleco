@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 import Livro1Image from '../assets/images/pulseiradeodisea.png';
 import DeusesBainos from '../assets/images/deuses_baianos.jpg'
 import './livros.scss'; // Importe o arquivo de estilo
-import Pagina404 from './erro';
+
 
 // Exemplo de dados de livros
 const livrosData = [
@@ -16,14 +16,14 @@ const livrosData = [
     title: 'A pulseira de Odísea',
     author: 'Marcos Rangel',
     image: Livro1Image,
-    site: Pagina404
+    site: "https://www.google.com"
   },
   {
     id: 2,
     title: 'Deuses Baianos - em breve',
     author: 'Marcos Rangel',
     image: DeusesBainos,
-    site: Pagina404
+    site: "https://www.google.com"
   },
   // Adicione mais livros conforme necessário
 ];
